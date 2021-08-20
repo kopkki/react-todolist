@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+button {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  border: gray 1px solid;
+  border-radius: 5px;
+  background: white;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(230, 230, 230);
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+}
+
+label {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-list {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  width: 90%;
+  margin: 1rem auto;
+  padding: 0.75rem;
+  border: gray 1px solid;
+  border-radius: 5px;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: rgb(184, 184, 184) 1px solid;
+  /* border: black 1px solid; */
+}
+
+.todo-header input {
+  width: 80%;
+  margin-top: 0.25rem;
+  margin-left: 10px;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.todo-form {
+  display: flex;
+  width: 80%;
+}
+
+.todos-container {
+  margin: 1rem 0;
+}
+
+.todo-text {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo-text input[type="text"] {
+  width: 80%;
+  margin-top: 0.25rem;
+  margin-left: 10px;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.todo-text h3 {
+  margin-left: 5px;
+}
+
+.todos {
+  list-style-type: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 35%;
+}
+
+.edit {
+  background-color: rgba(145, 224, 255, 0.9);
+}
+
+.edit:hover {
+  background-color: rgba(145, 224, 255, 1);
+}
+
+.delete {
+  background-color: rgba(255, 74, 74, 0.9);
+}
+
+.delete:hover {
+  background-color: rgba(255, 74, 74, 1);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-bottom: rgb(184, 184, 184) 1px solid;
+}
+
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .todo-list {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .todo-list {
+    max-width: 40%;
+  }
+}
