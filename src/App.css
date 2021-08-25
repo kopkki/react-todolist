@@ -89,6 +89,11 @@ label {
   width: 80%;
 }
 
+.todo-form span {
+  display: inline-block;
+  width: 55px;
+}
+
 .todos-container {
   margin: 1rem 0;
 }

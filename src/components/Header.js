@@ -11,8 +11,16 @@ function Header({ addTodo }) {
   return (
     <header className="todo-header">
       <div className="todo-form">
-        <label htmlFor="todo-input">項目:</label>
-        <input type="text" name="todo-input" id="todo-input" ref={todoRef} />
+        <label htmlFor="todo-input">
+          <span className="label-text">項目:</span>
+        </label>
+        <input
+          type="text"
+          name="todo-input"
+          id="todo-input"
+          ref={todoRef}
+          placeholder="請輸入文字"
+        />
       </div>
       <button onClick={handleAdd}>送出</button>
     </header>

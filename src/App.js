@@ -12,8 +12,10 @@ function App() {
   );
 
   const handleDelete = (id) => {
-    const newTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(newTodos);
+    if (window.confirm("確定刪除?")) {
+      const newTodos = todos.filter((todo) => todo.id !== id);
+      setTodos(newTodos);
+    }
   };
 
   const handleCheck = (id) => {
@@ -33,6 +35,10 @@ function App() {
   };
 
   const addTodo = (title) => {
+    if (!title) {
+      alert("請輸入文字");
+      return;
+    }
     const newTodo = {
       id: nanoid(),
       title: title,
