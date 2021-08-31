@@ -42,7 +42,7 @@ function Todo(props) {
             onBlur={() => editBlur(id)}
           />
         ) : (
-          <h3>{title}</h3>
+          <label htmlFor="done">{title}</label>
         )}
       </div>
       <div className="btn-container">

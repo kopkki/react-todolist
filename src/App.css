@@ -114,7 +114,7 @@ label {
   outline: none;
 }
 
-.todo-text h3 {
+.todo-text label {
   margin-left: 5px;
 }
 
