@@ -27,7 +27,7 @@ function Todo(props) {
         <input
           type="checkbox"
           name="done"
-          id="done"
+          id={`done${id}`}
           checked={isDone}
           onChange={() => handleCheck(id)}
         />
@@ -42,7 +42,7 @@ function Todo(props) {
             onBlur={() => editBlur(id)}
           />
         ) : (
-          <label htmlFor="done">{title}</label>
+          <label htmlFor={`done${id}`}>{title}</label>
         )}
       </div>
       <div className="btn-container">
